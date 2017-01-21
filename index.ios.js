@@ -7,11 +7,16 @@
 import React from 'react';
 import {
   AppRegistry,
+  View,
 } from 'react-native';
-import Header from './src/components/header.js';
+import Header from './src/components/Header.js';
+import AlbumList from './src/components/AlbumList';
 
 const UdemyApp = () => (
+  <View>
   <Header title='Albums' />
+  <AlbumList />
+  </View>
 );
 
 AppRegistry.registerComponent('UdemyApp', () => UdemyApp);
